@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mindfreelabs.mintcoins" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.mindfreelabs.mintcoins.MintCoinsApplication_" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/analytics_global_config"/>
+        <activity android:label="@string/app_name" android:name="com.mindfreelabs.mintcoins.Login.LoginActivity_">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_mainScreen" android:name="com.mindfreelabs.mintcoins.Home.HomeActivity_" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:label="@string/title_activity_register" android:name="com.mindfreelabs.mintcoins.Register.RegisterActivity_" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="net.metaps.sdk.WallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/title_activity_terms_and_conditions" android:name="com.mindfreelabs.mintcoins.Register.TermsAndConditionsActivity_"/>
+        <activity android:label="@string/title_activity_forgot_password" android:name="com.mindfreelabs.mintcoins.ForgotPassword.ForgotPasswordActivity_"/>
+        <activity android:label="MintCoins - Offers" android:name="com.mindfreelabs.mintcoins.MintCoinsOfferwall.MintCoinsOfferwall_"/>
+        <activity android:label="MintCoins - Offer Details" android:name="com.mindfreelabs.mintcoins.MintCoinsOfferwall.MintCoinsOfferDetails_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.General.InfoDialogActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Home.RateReview.RateReviewDialogActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Home.UpdateAppActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Home.Withdraw.WithdrawConfirmDialogActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Register.RegisterConfirmDialogActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Home.Profile.ChangePasswordDialog_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:label="" android:name="com.mindfreelabs.mintcoins.Home.Profile.PayoutSelectionDialogActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.aarki.AarkiOfferActivity"/>
+        <activity android:name="com.mindfreelabs.mintcoins.Home.Profile.MultipleSelectionActivity_" android:theme="@style/Theme.Dialog.NoActionBar"/>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name="com.nativex.monetization.activities.InterstitialActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:name="com.nativex.videoplayer.VideoActivity"/>
+        <activity android:configChanges="orientation" android:name="com.sponsorpay.publisher.ofw.SPOfferWallActivity"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.OfferWallActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.woobi.view.OfferDescriptionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.OfferActivity"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.OfferIncentiveAppDescrptionPopupActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.OfferNonIncentiveAppDescrptionPopupActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.SponsoredByDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.OfferPopupActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.ApkDownloadDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.view.VideoExitQueryDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.sourcekit.vast.activity.VastVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:name="com.woobi.sourcekit.vast.activity.VastVideoPopupActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>
